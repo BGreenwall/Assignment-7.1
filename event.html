@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Image</title>
+    <style>
+        /* to adjust the container of image container*/
+        #image-container {
+            position: relative;
+            width: 800px; 
+            height: 400px; 
+        }
+        /* to adjust the meme image size */
+        #image { 
+            position: absolute;
+            width: 100px; 
+            height: 100px; 
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">  <!-- making background light blue -->
+
+    <h1>Click start to move image 300px to right</h1>  <!-- title -->
+
+    <!-- from lines 23-27 creating the start and stop buttons, and inserting the image -->
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()" disabled>Stop</button>
+    <div id="image-container">
+    <img id="image" src="image.jpg" alt="Moving Image">
+    </div>
+    
+    <script src="ex.js"></script><!-- in order to access .js file -->
+</body>
+</html>
